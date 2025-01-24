@@ -6,7 +6,8 @@
     "dev": "nodemon backend/index.js",
     "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend && npm run move-files", 
     "start": "nodemon backend/index.js",
-    "move-files": "cp -r ./frontend/build/* ./backend/public/" 
+    "move-files": "xcopy /e /i ./frontend/build/* "
+
   },
   "keywords": [],
   "author": "",
